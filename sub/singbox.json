@@ -70,19 +70,19 @@
       "tag": "📢 https://t.me/irnova_proxy",
       "server": "192.0.2.1",
       "server_port": 443,
-      "uuid": "3426441d-a27a-4240-807e-3ee83da53898",
+      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
       "security": "auto",
       "alter_id": 0,
       "transport": {
         "type": "ws",
         "path": "/?fake=1",
         "headers": {
-          "Host": "moris.whatsmyipadsress.cloudns.nz"
+          "Host": "nova-pearl-panel-7d22.abuse-customer.workers.dev"
         }
       },
       "tls": {
         "enabled": true,
-        "server_name": "moris.whatsmyipadsress.cloudns.nz"
+        "server_name": "nova-pearl-panel-7d22.abuse-customer.workers.dev"
       }
     },
     {
@@ -179,24 +179,6 @@
     {
       "type": "block",
       "tag": "REJECT"
-    },
-    {
-      "type": "wireguard",
-      "tag": "Nova-WARP",
-      "server": "162.159.192.1",
-      "server_port": 4500,
-      "local_address": [
-        "172.16.0.2/32",
-        "2606:4700:110:87d3:65f:68b5:998b:8de3/128"
-      ],
-      "private_key": "3/pD+FLnmC8ZkqDG09Szk4QYUo3+mloKOsc5rY3+i70=",
-      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": [
-        143,
-        132,
-        127
-      ],
-      "mtu": 1280
     }
   ],
   "route": {
@@ -5562,7 +5544,8 @@
           "yio3ap3w494.xwk4b.adobestats.io",
           "3zjexzyl.6u13v.adobestats.io",
           "e3y03zy11sin.6u13v.adobestats.io",
-          "mhkfj4240610.6u13v.adobestats.io"
+          "mhkfj4240610.6u13v.adobestats.io",
+          "5n9rrijdplu.lqn0m.adobestats.io"
         ],
         "outbound": "🛑 全球拦截",
         "action": "route"
@@ -8483,7 +8466,7 @@
       }
     ],
     "auto_detect_interface": true,
-    "final": "Nova-WARP",
+    "final": "🐟 漏网之鱼",
     "rule_set": [
       {
         "tag": "geoip-cn",
