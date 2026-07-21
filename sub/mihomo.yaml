@@ -29,25 +29,17 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: "📢 https://t.me/irnova_proxy", server: 192.0.2.1, port: 443, type: vmess, uuid: 3426441d-a27a-4240-807e-3ee83da53898, alterId: 0, cipher: auto, tls: true, servername: moris.whatsmyipadsress.cloudns.nz, network: ws, ws-opts: {path: /?fake=1, headers: {Host: moris.whatsmyipadsress.cloudns.nz}}, udp: false}
-  - name: "Nova-WARP"
-    type: wireguard
-    server: 162.159.192.1
-    port: 4500
-    ip: 172.16.0.2/32
-    ipv6: "2606:4700:110:87d3:65f:68b5:998b:8de3/128"
-    private-key: "3/pD+FLnmC8ZkqDG09Szk4QYUo3+mloKOsc5rY3+i70="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    reserved: "j4R/"
-    udp: true
-    mtu: 1280
-    amnezia-wg-option: {jc: 4, jmin: 40, jmax: 70}
-  - {name: "سرویس رایگان نوا moris.whatsmyipadsress.cloudns.nz:443 [VLESS]", server: moris.whatsmyipadsress.cloudns.nz, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
-  - {name: "سرویس رایگان نوا 162.159.24.12:443 [VLESS]", server: 162.159.24.12, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
-  - {name: "سرویس رایگان نوا 104.26.9.29:443 [VLESS]", server: 104.26.9.29, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
-  - {name: "سرویس رایگان نوا 104.20.33.25:443 [VLESS]", server: 104.20.33.25, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
-  - {name: "سرویس رایگان نوا 104.16.129.4:443 [VLESS]", server: 104.16.129.4, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
-  - {name: "سرویس رایگان نوا 104.19.11.87:443 [VLESS]", server: 104.19.11.87, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
+  - {name: "📢 https://t.me/irnova_proxy", server: 192.0.2.1, port: 443, type: vmess, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, alterId: 0, cipher: auto, tls: true, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, network: ws, ws-opts: {path: /?fake=1, headers: {Host: nova-pearl-panel-7d22.abuse-customer.workers.dev}}, udp: false}
+  - {name: "سرویس رایگان نوا nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]", server: nova-pearl-panel-7d22.abuse-customer.workers.dev, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
+  - {name: "سرویس رایگان نوا 104.17.66.138:443 [VLESS]", server: 104.17.66.138, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
+  - {name: "سرویس رایگان نوا 190.93.244.130:443 [VLESS]", server: 190.93.244.130, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
+  - {name: "سرویس رایگان نوا 104.27.96.197:2053 [VLESS]", server: 104.27.96.197, port: 2053, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
+  - {name: "سرویس رایگان نوا 8.6.112.165:443 [VLESS]", server: 8.6.112.165, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
+  - {name: "سرویس رایگان نوا Chatgpt.com:443 [VLESS]", server: Chatgpt.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
+  - {name: "سرویس رایگان نوا Grok.com:443 [VLESS]", server: Grok.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
+  - {name: "سرویس رایگان نوا npmjs.com:443 [VLESS]", server: npmjs.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
+  - {name: "سرویس رایگان نوا openai.com:443 [VLESS]", server: openai.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
+  - {name: "سرویس رایگان نوا chess.com:443 [VLESS]", server: chess.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -57,47 +49,63 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-      - سرویس رایگان نوا moris.whatsmyipadsress.cloudns.nz:443 [VLESS]
-      - سرویس رایگان نوا 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا Grok.com:443 [VLESS]
+      - سرویس رایگان نوا npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا openai.com:443 [VLESS]
+      - سرویس رایگان نوا chess.com:443 [VLESS]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - سرویس رایگان نوا moris.whatsmyipadsress.cloudns.nz:443 [VLESS]
-      - سرویس رایگان نوا 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا Grok.com:443 [VLESS]
+      - سرویس رایگان نوا npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا openai.com:443 [VLESS]
+      - سرویس رایگان نوا chess.com:443 [VLESS]
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - سرویس رایگان نوا moris.whatsmyipadsress.cloudns.nz:443 [VLESS]
-      - سرویس رایگان نوا 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا Grok.com:443 [VLESS]
+      - سرویس رایگان نوا npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا openai.com:443 [VLESS]
+      - سرویس رایگان نوا chess.com:443 [VLESS]
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - سرویس رایگان نوا moris.whatsmyipadsress.cloudns.nz:443 [VLESS]
-      - سرویس رایگان نوا 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا Grok.com:443 [VLESS]
+      - سرویس رایگان نوا npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا openai.com:443 [VLESS]
+      - سرویس رایگان نوا chess.com:443 [VLESS]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -120,12 +128,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - سرویس رایگان نوا moris.whatsmyipadsress.cloudns.nz:443 [VLESS]
-      - سرویس رایگان نوا 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا Grok.com:443 [VLESS]
+      - سرویس رایگان نوا npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا openai.com:443 [VLESS]
+      - سرویس رایگان نوا chess.com:443 [VLESS]
   - name: ☁️ CloudFlareCDN
     type: select
     proxies:
@@ -136,12 +148,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - سرویس رایگان نوا moris.whatsmyipadsress.cloudns.nz:443 [VLESS]
-      - سرویس رایگان نوا 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا Grok.com:443 [VLESS]
+      - سرویس رایگان نوا npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا openai.com:443 [VLESS]
+      - سرویس رایگان نوا chess.com:443 [VLESS]
 rules:
 # PHISHING BLOCK RULES
   - GEOSITE,category-phishing,REJECT
@@ -5438,6 +5454,7 @@ rules:
   - DOMAIN,3zjexzyl.6u13v.adobestats.io,🛑 全球拦截
   - DOMAIN,e3y03zy11sin.6u13v.adobestats.io,🛑 全球拦截
   - DOMAIN,mhkfj4240610.6u13v.adobestats.io,🛑 全球拦截
+  - DOMAIN,5n9rrijdplu.lqn0m.adobestats.io,🛑 全球拦截
   - DOMAIN-SUFFIX,265.com,🚀 节点选择
   - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🚀 节点选择
@@ -8284,4 +8301,4 @@ rules:
   - IP-CIDR,198.41.252.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.122.0.0/24,☁️ CloudFlareCDN,no-resolve
   - GEOIP,CN,🎯 全球直连
-  - MATCH,Nova-WARP
+  - MATCH,🐟 漏网之鱼
