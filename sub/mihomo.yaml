@@ -29,17 +29,25 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: "📢 https://t.me/irnova_proxy", server: 192.0.2.1, port: 443, type: vmess, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, alterId: 0, cipher: auto, tls: true, servername: "nova-pearl-panel-7d22.abuse-customer.workers.dev", network: ws, ws-opts: {path: "/?fake=1", headers: {Host: "nova-pearl-panel-7d22.abuse-customer.workers.dev"}}, udp: false}
-  - {name: "سرویس رایگان نوا @irnova_proxy nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]", server: nova-pearl-panel-7d22.abuse-customer.workers.dev, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy 104.17.66.138:443 [VLESS]", server: 104.17.66.138, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy 190.93.244.130:443 [VLESS]", server: 190.93.244.130, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy 104.27.96.197:2053 [VLESS]", server: 104.27.96.197, port: 2053, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy 8.6.112.165:443 [VLESS]", server: 8.6.112.165, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy Chatgpt.com:443 [VLESS]", server: Chatgpt.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy Grok.com:443 [VLESS]", server: Grok.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy npmjs.com:443 [VLESS]", server: npmjs.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy openai.com:443 [VLESS]", server: openai.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy chess.com:443 [VLESS]", server: chess.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-pearl-panel-7d22.abuse-customer.workers.dev, mode: stream-one}}
+  - {name: "📢 https://t.me/irnova_proxy", server: 192.0.2.1, port: 443, type: vmess, uuid: 3426441d-a27a-4240-807e-3ee83da53898, alterId: 0, cipher: auto, tls: true, servername: "nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev", network: ws, ws-opts: {path: "/?fake=1", headers: {Host: "nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev"}}, udp: false}
+  - name: "Nova-WARP"
+    type: wireguard
+    server: 162.159.192.1
+    port: 4500
+    ip: 172.16.0.2/32
+    ipv6: "2606:4700:110:87d3:65f:68b5:998b:8de3/128"
+    private-key: "3/pD+FLnmC8ZkqDG09Szk4QYUo3+mloKOsc5rY3+i70="
+    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
+    reserved: "j4R/"
+    udp: true
+    mtu: 1280
+    amnezia-wg-option: {jc: 4, jmin: 40, jmax: 70}
+  - {name: "سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]", server: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
+  - {name: "سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]", server: 162.159.24.12, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, mode: stream-one}}
+  - {name: "سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]", server: 104.26.9.29, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
+  - {name: "سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]", server: 104.20.33.25, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, mode: stream-one}}
+  - {name: "سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]", server: 104.16.129.4, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
+  - {name: "سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]", server: 104.19.11.87, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, mode: stream-one}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -49,63 +57,47 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-      - سرویس رایگان نوا @irnova_proxy nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.17.66.138:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 190.93.244.130:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.27.96.197:2053 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 8.6.112.165:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Chatgpt.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Grok.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy npmjs.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy openai.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - سرویس رایگان نوا @irnova_proxy nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.17.66.138:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 190.93.244.130:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.27.96.197:2053 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 8.6.112.165:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Chatgpt.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Grok.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy npmjs.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy openai.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - سرویس رایگان نوا @irnova_proxy nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.17.66.138:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 190.93.244.130:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.27.96.197:2053 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 8.6.112.165:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Chatgpt.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Grok.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy npmjs.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy openai.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - سرویس رایگان نوا @irnova_proxy nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.17.66.138:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 190.93.244.130:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.27.96.197:2053 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 8.6.112.165:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Chatgpt.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Grok.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy npmjs.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy openai.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -128,16 +120,12 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - سرویس رایگان نوا @irnova_proxy nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.17.66.138:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 190.93.244.130:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.27.96.197:2053 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 8.6.112.165:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Chatgpt.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Grok.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy npmjs.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy openai.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
   - name: ☁️ CloudFlareCDN
     type: select
     proxies:
@@ -148,16 +136,12 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - سرویس رایگان نوا @irnova_proxy nova-pearl-panel-7d22.abuse-customer.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.17.66.138:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 190.93.244.130:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.27.96.197:2053 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 8.6.112.165:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Chatgpt.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy Grok.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy npmjs.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy openai.com:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
+      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
 rules:
 # SANCTION BYPASS RULES
   - DOMAIN-SUFFIX,intel.com,DIRECT
@@ -8671,26 +8655,21 @@ rules:
   - IP-CIDR,5.252.81.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.6.112.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.20.125.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.21.9.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.21.10.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.21.111.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.24.87.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.25.97.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.27.64.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.27.66.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.27.68.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.29.109.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.29.228.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.29.230.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.31.160.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.34.70.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.34.70.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.34.146.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.35.211.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.37.43.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.39.125.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.39.204.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.39.214.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.44.2.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.44.61.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.47.13.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.47.69.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8703,6 +8682,7 @@ rules:
   - IP-CIDR,31.185.108.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,37.153.170.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,38.96.28.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,42.61.47.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,43.228.232.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,43.230.112.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,43.230.114.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8728,6 +8708,7 @@ rules:
   - IP-CIDR,51.194.144.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,51.241.128.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,57.250.49.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,61.8.33.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,61.32.240.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,61.245.108.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,62.146.255.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8754,7 +8735,9 @@ rules:
   - IP-CIDR,82.22.16.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,82.25.20.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,82.26.156.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,82.109.153.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,82.139.216.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,87.86.16.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,87.232.75.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,88.216.69.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,89.46.251.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8818,17 +8801,17 @@ rules:
   - IP-CIDR,104.22.112.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.120.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.123.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.127.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.126.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.128.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.131.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.132.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.134.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.136.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.140.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.148.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.150.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.155.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.156.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.160.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.162.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.165.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.167.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.168.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8838,7 +8821,8 @@ rules:
   - IP-CIDR,104.22.176.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.180.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.186.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.190.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.190.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.192.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.23.160.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.23.176.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.23.178.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8860,12 +8844,8 @@ rules:
   - IP-CIDR,104.27.0.0/17,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.27.192.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.28.0.0/16,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.29.5.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.29.6.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.29.9.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.29.45.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.29.63.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.29.73.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.29.77.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.29.92.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.29.111.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8944,6 +8924,7 @@ rules:
   - IP-CIDR,147.189.42.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,148.224.60.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,148.227.167.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,149.112.78.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,150.48.128.0/18,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,151.243.133.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,151.245.127.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8954,6 +8935,7 @@ rules:
   - IP-CIDR,154.81.141.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.84.164.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.86.118.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,154.193.63.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.193.133.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.193.184.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.200.89.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8963,6 +8945,7 @@ rules:
   - IP-CIDR,156.70.60.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.71.149.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.224.73.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,156.238.181.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.243.83.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.246.69.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.246.70.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8974,7 +8957,7 @@ rules:
   - IP-CIDR,162.44.104.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.0.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.8.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,162.158.10.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,162.158.10.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.12.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.16.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.24.0/23,☁️ CloudFlareCDN,no-resolve
@@ -8987,7 +8970,6 @@ rules:
   - IP-CIDR,162.158.40.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.44.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.48.0/21,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,162.158.56.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.61.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.62.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.73.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9186,7 +9168,6 @@ rules:
   - IP-CIDR,172.68.244.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.248.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.251.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.68.252.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.255.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.0.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.5.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9270,7 +9251,8 @@ rules:
   - IP-CIDR,172.69.241.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.245.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.246.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.69.248.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.248.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.251.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.253.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.255.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.70.32.0/20,☁️ CloudFlareCDN,no-resolve
@@ -9376,6 +9358,7 @@ rules:
   - IP-CIDR,173.245.63.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,176.103.113.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,178.83.176.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,178.93.117.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,178.94.249.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,181.215.196.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,182.23.210.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9448,9 +9431,11 @@ rules:
   - IP-CIDR,198.41.238.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.41.240.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.41.242.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,198.52.36.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.148.174.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.217.251.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.252.206.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,199.7.70.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,199.27.128.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,199.65.62.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,199.68.16.0/22,☁️ CloudFlareCDN,no-resolve
@@ -9463,6 +9448,8 @@ rules:
   - IP-CIDR,203.117.53.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,203.120.52.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,204.4.235.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,204.62.121.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,204.62.122.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,204.69.207.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,204.153.16.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,204.195.192.0/18,☁️ CloudFlareCDN,no-resolve
@@ -9524,4 +9511,4 @@ rules:
   - IP-CIDR,198.41.252.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.122.0.0/24,☁️ CloudFlareCDN,no-resolve
   - GEOIP,CN,🎯 全球直连
-  - MATCH,🐟 漏网之鱼
+  - MATCH,Nova-WARP
