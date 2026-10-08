@@ -208,6 +208,11 @@ proxy-groups:
       - سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]
       - سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]
 rules:
+# SANCTION BYPASS RULES
+  - DOMAIN-SUFFIX,intel.com,DIRECT
+  - DOMAIN-SUFFIX,oracle.com,DIRECT
+  - DOMAIN-SUFFIX,docker.com,DIRECT
+  - DOMAIN-SUFFIX,android.com,DIRECT
 # IRANIAN DIRECT RULES
   - DOMAIN-SUFFIX,ir,DIRECT
   - GEOIP,IR,DIRECT,no-resolve
@@ -7582,8 +7587,6 @@ rules:
   - DOMAIN,vonunaxc.61ro5.adobestats.io,🛑 全球拦截
   - DOMAIN,9d6v9viz79.u0op6.adobestats.io,🛑 全球拦截
   - DOMAIN,ljlijiscgm.u0op6.adobestats.io,🛑 全球拦截
-  - DOMAIN,ny052em6i.bgvqb.adobestats.io,🛑 全球拦截
-  - DOMAIN,spmyox8k4.u0op6.adobestats.io,🛑 全球拦截
   - DOMAIN-SUFFIX,265.com,🚀 节点选择
   - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🚀 节点选择
