@@ -22,6 +22,11 @@ dns:
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
+  nameserver-policy:
+    "eng.clickeyourip1.cloudns.nz": https://dns.alidns.com/dns-query
+    "nova-pearl-panel-7d22.abuse-customer.workers.dev": https://dns.alidns.com/dns-query
+    "moris.whatsmyipadsress.cloudns.nz": https://dns.alidns.com/dns-query
+    "cloudflare-ech.com": https://dns.alidns.com/dns-query
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -29,125 +34,185 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: "📢 https://t.me/irnova_proxy", server: 192.0.2.1, port: 443, type: vmess, uuid: 3426441d-a27a-4240-807e-3ee83da53898, alterId: 0, cipher: auto, tls: true, servername: "nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev", network: ws, ws-opts: {path: "/?fake=1", headers: {Host: "nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev"}}, udp: false}
-  - name: "Nova-WARP"
-    type: wireguard
-    server: 162.159.192.1
-    port: 4500
-    ip: 172.16.0.2/32
-    ipv6: "2606:4700:110:83fc:8729:390a:6c9c:f783/128"
-    private-key: "n9f4ADy21cRIaXS/AWutTcjzTTIeyZHotr2d6EZqBbE="
-    public-key: "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo="
-    reserved: "dQbj"
-    udp: true
-    mtu: 1280
-    amnezia-wg-option: {jc: 4, jmin: 40, jmax: 70}
-  - {name: "سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]", server: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]", server: 162.159.24.12, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]", server: 104.26.9.29, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]", server: 104.20.33.25, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]", server: 104.16.129.4, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: moris.whatsmyipadsress.cloudns.nz, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: moris.whatsmyipadsress.cloudns.nz, mode: stream-one}}
-  - {name: "سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]", server: 104.19.11.87, port: 443, type: vless, uuid: 3426441d-a27a-4240-807e-3ee83da53898, tls: true, skip-cert-verify: false, servername: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, client-fingerprint: chrome, network: xhttp, xhttp-opts: {path: /proxyip=144.31.63.230, host: nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev, mode: stream-one}}
+  - {name: "📢 https://t.me/irnova", server: 192.0.2.1, port: 443, type: vmess, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, alterId: 0, cipher: auto, tls: true, servername: "eng.clickeyourip1.cloudns.nz", network: ws, ws-opts: {path: "/?fake=1", headers: {Host: "eng.clickeyourip1.cloudns.nz"}}, udp: false}
+  - {name: "سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]", server: eng.clickeyourip1.cloudns.nz, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: eng.clickeyourip1.cloudns.nz, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: eng.clickeyourip1.cloudns.nz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]", server: 104.17.66.138, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: nova-pearl-panel-7d22.abuse-customer.workers.dev}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]", server: 190.93.244.130, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: eng.clickeyourip1.cloudns.nz, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: eng.clickeyourip1.cloudns.nz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]", server: 104.27.96.197, port: 2053, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: nova-pearl-panel-7d22.abuse-customer.workers.dev}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]", server: 8.6.112.165, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: eng.clickeyourip1.cloudns.nz, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: eng.clickeyourip1.cloudns.nz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]", server: Chatgpt.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: nova-pearl-panel-7d22.abuse-customer.workers.dev}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova Grok.com:443 [VLESS]", server: Grok.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: eng.clickeyourip1.cloudns.nz, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: eng.clickeyourip1.cloudns.nz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]", server: npmjs.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: nova-pearl-panel-7d22.abuse-customer.workers.dev}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova openai.com:443 [VLESS]", server: openai.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: eng.clickeyourip1.cloudns.nz, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: eng.clickeyourip1.cloudns.nz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova chess.com:443 [VLESS]", server: chess.com, port: 443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: nova-pearl-panel-7d22.abuse-customer.workers.dev}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]", server: 104.16.170.48, port: 8443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: eng.clickeyourip1.cloudns.nz, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: eng.clickeyourip1.cloudns.nz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]", server: 162.159.49.217, port: 8443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: nova-pearl-panel-7d22.abuse-customer.workers.dev}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]", server: 104.21.204.154, port: 8443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: eng.clickeyourip1.cloudns.nz, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: eng.clickeyourip1.cloudns.nz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]", server: 104.25.139.186, port: 8443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: nova-pearl-panel-7d22.abuse-customer.workers.dev}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]", server: 104.18.236.41, port: 8443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: eng.clickeyourip1.cloudns.nz, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: eng.clickeyourip1.cloudns.nz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]", server: 104.19.182.152, port: 8443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: nova-pearl-panel-7d22.abuse-customer.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: nova-pearl-panel-7d22.abuse-customer.workers.dev}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
+  - {name: "سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]", server: 172.64.98.61, port: 8443, type: vless, uuid: a51dc67d-4e71-4572-84e2-3b8dbd725b7a, tls: true, skip-cert-verify: false, servername: eng.clickeyourip1.cloudns.nz, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=149.248.199.173, headers: {Host: eng.clickeyourip1.cloudns.nz}}, ech-opts: {enable: true, query-server-name: cloudflare-ech.com}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - "📢 https://t.me/irnova_proxy"
+      - "📢 https://t.me/irnova"
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
-      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova Grok.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova openai.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova Grok.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova openai.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova Grok.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova openai.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
-      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova Grok.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova openai.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]
   - name: 🎯 全球直连
     type: select
     proxies:
-      - "📢 https://t.me/irnova_proxy"
+      - "📢 https://t.me/irnova"
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
   - name: 🛑 全球拦截
     type: select
     proxies:
-      - "📢 https://t.me/irnova_proxy"
+      - "📢 https://t.me/irnova"
       - REJECT
       - DIRECT
   - name: 🐟 漏网之鱼
     type: select
     proxies:
-      - "📢 https://t.me/irnova_proxy"
+      - "📢 https://t.me/irnova"
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova Grok.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova openai.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]
   - name: ☁️ CloudFlareCDN
     type: select
     proxies:
-      - "📢 https://t.me/irnova_proxy"
+      - "📢 https://t.me/irnova"
       - 🐟 漏网之鱼
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
-      - سرویس رایگان نوا @irnova_proxy nova-falcon-cloud-ec7d.abuse-deactiver.workers.dev:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 162.159.24.12:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.26.9.29:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.20.33.25:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.16.129.4:443 [VLESS]
-      - سرویس رایگان نوا @irnova_proxy 104.19.11.87:443 [VLESS]
+      - سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]
+      - سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]
+      - سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]
+      - سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova Grok.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova openai.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova chess.com:443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]
+      - سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]
 rules:
-# SANCTION BYPASS RULES
-  - DOMAIN-SUFFIX,intel.com,DIRECT
-  - DOMAIN-SUFFIX,oracle.com,DIRECT
-  - DOMAIN-SUFFIX,docker.com,DIRECT
-  - DOMAIN-SUFFIX,android.com,DIRECT
 # IRANIAN DIRECT RULES
   - DOMAIN-SUFFIX,ir,DIRECT
   - GEOIP,IR,DIRECT,no-resolve
@@ -1829,9 +1894,18 @@ rules:
   - DOMAIN-SUFFIX,tracker.yhd.com,🛑 全球拦截
   - DOMAIN-SUFFIX,tralog.ganji.com,🛑 全球拦截
   - DOMAIN-SUFFIX,up.qingdaonews.com,🛑 全球拦截
-  - DOMAIN,ic.adobe.io,🛑 全球拦截
+  - DOMAIN,adobe.io,🛑 全球拦截
   - DOMAIN,cc-api-data.adobe.io,🛑 全球拦截
+  - DOMAIN,crs.cr.adobe.com,🛑 全球拦截
   - DOMAIN,fp.adobestats.io,🛑 全球拦截
+  - DOMAIN,gcos.adobe.io,🛑 全球拦截
+  - DOMAIN,hbc.adobe.io,🛑 全球拦截
+  - DOMAIN,ic.adobe.io,🛑 全球拦截
+  - DOMAIN,lcs-robs.adobe.io,🛑 全球拦截
+  - DOMAIN,lcs-ulecs.adobe.io,🛑 全球拦截
+  - DOMAIN,prod.adobegenuine.com,🛑 全球拦截
+  - DOMAIN,workflow.licenses.adobe.com,🛑 全球拦截
+  - DOMAIN,workflow-stage.licenses.adobe.com,🛑 全球拦截
   - DOMAIN,0mo5a70cqa.adobe.io,🛑 全球拦截
   - DOMAIN,1b9khekel6.adobe.io,🛑 全球拦截
   - DOMAIN,1hzopx6nz7.adobe.io,🛑 全球拦截
@@ -3610,7 +3684,6 @@ rules:
   - DOMAIN,qfo0y9d3ohxu.4e2id.adobestats.io,🛑 全球拦截
   - DOMAIN,ogktn7dh1u.adobe.io,🛑 全球拦截
   - DOMAIN,fqtfjwmddnvn.051my.adobestats.io,🛑 全球拦截
-  - DOMAIN,lcs-robs.adobe.io,🛑 全球拦截
   - DOMAIN,s8ehmx99qw4z.4p4bv.adobestats.io,🛑 全球拦截
   - DOMAIN,6sx70k2n.bgvqb.adobestats.io,🛑 全球拦截
   - DOMAIN,m5eo8l308yn5.bgvqb.adobestats.io,🛑 全球拦截
@@ -3626,7 +3699,6 @@ rules:
   - DOMAIN,8kbj8x2r.xwk4b.adobestats.io,🛑 全球拦截
   - DOMAIN,6pqb1f0d.7r39q.adobestats.io,🛑 全球拦截
   - DOMAIN,ah2wt6iy.4e2id.adobestats.io,🛑 全球拦截
-  - DOMAIN,hbc.adobe.io,🛑 全球拦截
   - DOMAIN,mjilgpuvz7.adobestats.io,🛑 全球拦截
   - DOMAIN,yj1mifm2n4.adobestats.io,🛑 全球拦截
   - DOMAIN,csbv68eh.jiegg.adobestats.io,🛑 全球拦截
@@ -4301,7 +4373,6 @@ rules:
   - DOMAIN,m5s2furqby.7cnli.adobestats.io,🛑 全球拦截
   - DOMAIN,ggrvx3yxdd.adobestats.io,🛑 全球拦截
   - DOMAIN,gaac5p2y.4p4bv.adobestats.io,🛑 全球拦截
-  - DOMAIN,lcs-ulecs.adobe.io,🛑 全球拦截
   - DOMAIN,uc8axrnlin0.pkxns.adobestats.io,🛑 全球拦截
   - DOMAIN,zwp5hbxe.ay6tu.adobestats.io,🛑 全球拦截
   - DOMAIN,cmdqm0fl.4p4bv.adobestats.io,🛑 全球拦截
@@ -4518,7 +4589,6 @@ rules:
   - DOMAIN,3w267rdagt.p5jr3.adobestats.io,🛑 全球拦截
   - DOMAIN,cz7cgfnm6t.a13cy.adobestats.io,🛑 全球拦截
   - DOMAIN,ose7nyyjlh.lqn0m.adobestats.io,🛑 全球拦截
-  - DOMAIN,crs.cr.adobe.com,🛑 全球拦截
   - DOMAIN,gwzwlfgl4b.adobestats.io,🛑 全球拦截
   - DOMAIN,vdcf8rui0fr.a13cy.adobestats.io,🛑 全球拦截
   - DOMAIN,zeg3f5j2umh.lqn0m.adobestats.io,🛑 全球拦截
@@ -4773,13 +4843,11 @@ rules:
   - DOMAIN,k9bn1pb8.xwk4b.adobestats.io,🛑 全球拦截
   - DOMAIN,du19xw8i.4p4bv.adobestats.io,🛑 全球拦截
   - DOMAIN,j8awrvsh.wzwva.adobestats.io,🛑 全球拦截
-  - DOMAIN,gcos.adobe.io,🛑 全球拦截
   - DOMAIN,dd4wnlnz4o4.wzwva.adobestats.io,🛑 全球拦截
   - DOMAIN,dzgae2njxaq.lqn0m.adobestats.io,🛑 全球拦截
   - DOMAIN,zfkju3qu.xwk4b.adobestats.io,🛑 全球拦截
   - DOMAIN,ybnt1hdy.4p4bv.adobestats.io,🛑 全球拦截
   - DOMAIN,uczq5cp8.xwk4b.adobestats.io,🛑 全球拦截
-  - DOMAIN,prod.adobegenuine.com,🛑 全球拦截
   - DOMAIN,6o12rj6e.sf7e3.adobestats.io,🛑 全球拦截
   - DOMAIN,bga0dy55fqj.xwk4b.adobestats.io,🛑 全球拦截
   - DOMAIN,0bcampyyowr.lqn0m.adobestats.io,🛑 全球拦截
@@ -5375,7 +5443,6 @@ rules:
   - DOMAIN,q97bkqcvwh.adobestats.io,🛑 全球拦截
   - DOMAIN,lqkw18jb.sf7e3.adobestats.io,🛑 全球拦截
   - DOMAIN,m6zd0jnw.xwk4b.adobestats.io,🛑 全球拦截
-  - DOMAIN,adobe.io,🛑 全球拦截
   - DOMAIN,v8qopmtw.lqn0m.adobestats.io,🛑 全球拦截
   - DOMAIN,yfin3djujv.xwk4b.adobestats.io,🛑 全球拦截
   - DOMAIN,f5jeo6zi0.xwk4b.adobestats.io,🛑 全球拦截
@@ -6479,8 +6546,6 @@ rules:
   - DOMAIN,yooc080gjbs.jyqfm.adobestats.io,🛑 全球拦截
   - DOMAIN,zhp234mvi9t1.jyqfm.adobestats.io,🛑 全球拦截
   - DOMAIN,zrdjiy99m.jyqfm.adobestats.io,🛑 全球拦截
-  - DOMAIN,workflow.licenses.adobe.com,🛑 全球拦截
-  - DOMAIN,workflow-stage.licenses.adobe.com,🛑 全球拦截
   - DOMAIN,ttghbajq.td3wc.adobestats.io,🛑 全球拦截
   - DOMAIN,00l0620h.td3wc.adobestats.io,🛑 全球拦截
   - DOMAIN,0fjqvt7lisx.td3wc.adobestats.io,🛑 全球拦截
@@ -6677,6 +6742,851 @@ rules:
   - DOMAIN,27e10lrjk6f.61y77.adobestats.io,🛑 全球拦截
   - DOMAIN,picrx8i067.61y77.adobestats.io,🛑 全球拦截
   - DOMAIN,bpkh681n1.hmq9r.adobestats.io,🛑 全球拦截
+  - DOMAIN,hw7w59pe.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,085ae90xd1.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,0xx2u9tqcv6.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,18nq375cve.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,19ft6401hp.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,1iopzu3le.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,1q6j4iy2d.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,1tgftrtqh.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,1uixane2usri.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,1w2yq3cc6kaq.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,25lgquqo23.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,2maarmyn4.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,30r92skes.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,39xp014nwd.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,3bghi7py1tx9.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,3jme6yg1ks.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,3jr11byl5.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,400vncnjq.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,5a3sc3pzu2.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,5gr5f739.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,5luvr13t.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,61m5fy6660j.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,64ovo92n7av5.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,6ko3seksm0ls.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,7bc3hz5t82aw.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,82romfuzjcm.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,8gga1crk9w26.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,8jt3ezbvh3dw.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,8noa2w1ck.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,9d25rgm2sl5p.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,9qdfx4tqz.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,amqwugiqn0d6.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,av10eej36pr4.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,b8qlmyxp6ad1.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,bptmu6m29zq5.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,c959fglozl.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,ce0f6jp2.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,cx5oa4pwe.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,d8y4ott2o.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,dckgkgrc88e.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,dod8nx5mmh.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,e5mfhgfwhmqp.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,efw49stxqc.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,f6jqcvibklu.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,fmnobi8yg.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,gq1kdis5llc.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,h4wsofr07f0y.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,h7nu3ixn3.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,hbpj7wsu1.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,hqb3i4cheq.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,i9x6jomh0q.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,ihrziqxql4c.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,iri7gj9i.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,iwi3tdrl4.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,iz6wtmwhqqt.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,je36edga1s.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,k1lbxfvqih4.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,kh0y4tx5ylad.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,kiq4oxrl6hjw.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,km6jaoxrlt.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,ltwefefeeni.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,lyllpd5q.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,m07cf6sznl.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,mab7w33fh.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,n3c0km0c.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,n3ulnzzoyiu.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,ncr2ea2f.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,nleig3b7p.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,nmjye3airyi8.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,nvra1i5rcsc.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,o8jnod44h.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,oj1e2609au.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,oog6tjvah6b7.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,p7fgqkycu3sw.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,pb0emidd5.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,pzrjibbm09sq.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,q3ug03wg.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,q4vdjqpj.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,q98trwtebkny.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,qnly3co4556.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,r3611bdno78r.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,r5lggki5.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,tags47kn5.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,ts3mwug8q.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,w0yatka53.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,wdz8u5h8v88.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,xoutkxnhq.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,yd0mptfqf1.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,ykekfkhgh.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,ytg32shi.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,z2rei59c.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,z2xfo3f2fy.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,z862ysa4.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,za3cclgdyd0.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,zpc91ra9je.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,zs35omwv.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,zuz52eqf12.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,zwv1aalaw7e.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,g668bl5lzq.qd2w8.adobestats.io,🛑 全球拦截
+  - DOMAIN,izhszwo0my.qd2w8.adobestats.io,🛑 全球拦截
+  - DOMAIN,nwkjz1w1xa.qd2w8.adobestats.io,🛑 全球拦截
+  - DOMAIN,g668bl5lzq.68gqg.hstatic.io,🛑 全球拦截
+  - DOMAIN,r9wfhggrai.qd2w8.adobestats.io,🛑 全球拦截
+  - DOMAIN,r9wfhggrai.68gqg.hstatic.io,🛑 全球拦截
+  - DOMAIN,oithn4jbtc.qd2w8.adobestats.io,🛑 全球拦截
+  - DOMAIN,3tq4ajzff7.qd2w8.adobestats.io,🛑 全球拦截
+  - DOMAIN,ef5rb5ul1hn.xwk4b.adobestats.io,🛑 全球拦截
+  - DOMAIN,6tr5fro6n.u0op6.adobestats.io,🛑 全球拦截
+  - DOMAIN,14l0d6ad.u0op6.adobestats.io,🛑 全球拦截
+  - DOMAIN,ab56am2rb.xwk4b.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.4e2id.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.4p4bv.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.4wbo1.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.61ro5.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.61y77.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.6u13v.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.75rah.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.7cnli.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.7r39q.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.a13cy.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.auyzf.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.ay6tu.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.bgvqb.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.g51h4.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.h2uqz.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.hmq9r.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.hzm8t.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.i26lu.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.iwl5c.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.jdr5y.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.jiegg.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.jyqfm.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.lqn0m.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.mw1i8.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.n5wo7.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.nr94p.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.ok0r5.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.omx1p.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.p5jr3.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.pkxns.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.qd2w8.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.sf7e3.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.sisww.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.t8gxe.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.td3wc.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.u0op6.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.uheu9.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.vf1av.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.wzwva.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.xapgj.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.xp63y.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.xwk4b.adobestats.io,🛑 全球拦截
+  - DOMAIN,wildcard.zavjl.adobestats.io,🛑 全球拦截
+  - DOMAIN,03nc0tz3.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,0du31a0pti3.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,0etniw08.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,0vlp8lraqyf7.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,18gfmi7b.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,1japn9la75vs.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,1x7yo06p.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,27ejvyvqxua0.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,2iegrz47c.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,2uceqyalqp4.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,3dqtxv99w.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,3nee7lci.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,3thyho9go.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,430xjvueby0.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,448i2otc.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,4cxz3kip.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,4s15ji8v10.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,51r1925bssm.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,56k5936n.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,5a3gluzmy3.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,5vnahpf6vxg3.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,6o4buk6os.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,6tlpbly0xqir.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,6w1xacku.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,71aws6vb6i7.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,7863myjn.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,81imsttxs.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,88jen6oh7.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,8gwvlu6ds19l.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,96hrfovob.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,9b858awc.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,9peke9lzol.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,9uz42dkv0w.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,9vojkoxj.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,9y3rithkz0g.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,a3xevou5.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,a9uhft5im.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,at0z3qi543e.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,ayct29i79b.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,byo8uurtq1.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,c019fschj.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,c6kga2i6d7.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,c9mzwa8v8.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,cehhtph1k.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,cnbtrki80y.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,dcu2rwcjdw.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,de475zd41m.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,dg5at3gmcbz.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,f11gd12x7.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,fehzt46hf0.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,fm9zsw4t2.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,fr290f00izri.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,ft6evovrah0q.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,fy3l0fn8j.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,gay56mwqq.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,gf7fqze1k4g.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,h5lunmnu.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,h5sgmulr7sl.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,hy925c9oj.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,iic6wab4obt9.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,ikmnykuwh951.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,kdvl9s0cabl.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,lvpsr33h3xq.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,m8aee9dg.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,mctvwzlpobk.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,mf0dgx930.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,n9ryseml1.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,ng8vf8qs.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,njo2n14of.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,nslei9o9.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,o88f9ix9r0n.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,p0dxc5h60b.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,pbdegmp9ndp.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,qeqgydvmmj6p.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,qomlmetf.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,riw4ui79alrz.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,s3fo2uk1.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,s3ga2xdwx7fm.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,s6fnc52rp.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,skebyg7o7t8f.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,spadd2ef.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,sqxlvlbxs.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,u2d3uhzxh29x.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,v4c7xdc1mtj.27ejvyvqxua0.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,vv6cwmr9ploz.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,w4jg1gxb4g.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,w9y9ul2ih9.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,wq3cztppk.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,wx2ns0x6.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,xeqk469ld.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,xrnv458dud.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,yfkozrw4l.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,yjif04g42i.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,yw6tsa3j.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,zkzntpif5ax.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,zupfgzlw.051my.adobestats.io,🛑 全球拦截
+  - DOMAIN,0ni9lmwm2tfq.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,1c10k8tda2.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,1hapxuanqwsq.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,3724vv15re.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,3cw8e14c.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,4k18izul.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,53tl0rbm20m2.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,54s4xc78c9c.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,54u8hc70wq.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,592sg9mh29.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,61be2bagp.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,6nzeqy5apf.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,6zk0bp2g.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,7k9olitaxck1.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,7um59ynhx5x.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,8yr3z5jy8.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,9doco6swzp.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,adfcs81fnw63.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,agdc9eszpra8.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,ao16lbckiazg.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,b9v7gelt.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,badd67qf5x.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,chq4bqhv.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,ciojzrhvsav.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,cnmwuiqa9.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,cubfnk6jw.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,d21vvkgitaa.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,dboxrk8szpj.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,djss9e36wxbz.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,dp6363tep0y.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,eyzrur6buyy.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,fnhq8gk88cet.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,fq7s22z4j.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,gh00bxb7tv.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,go4wk5asf15c.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,h3eplnvf.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,haahbtgru2.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,hqnk6ckhd.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,hsykv44ixe.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,ht4yljrwf.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,i0talqam.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,i1vha0uhs.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,i5aumspxk.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,i6332p9hgu5u.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,immhykwms.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,irparowf35y.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,j1go7zkzl6er.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,j3gucx3sg2.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,j8qqtldqtv6.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,jk7kwu0oyb.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,jzxnln9c938a.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,k0al601ed.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,kbwr0nd5dwg.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,keeqds9bvlxd.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,kx1yetelq.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,l5c90ku3f2.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,lffazj5rv7.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,lnvfrwjesp0.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,lo4rtsgwgq.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,luab353z4bcv.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,m04r4xsu.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,mc8sq79e0.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,mh2hmsi21w3r.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,mm4rzyr6y.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,mpq9y6wt2.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,o825sns0.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,olimjoacsf8j.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,onzxlxzyxp.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,ozvul74wy.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,p072l5u9.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,pjo0g33myrj.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,prmfjzx23l.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,pv96vchvb.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,q4vh7z85.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,qlac3d72rca.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,sa133rbb.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,swpc680h9.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,t27jwdbkmgw5.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,texpl64ac0.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,tnm7ikj2hru.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,upt9i6vioh4x.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,v3vrobp8f.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,w0cizjljci1.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,w2pz0nifmo7.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,wewvqovt74k.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,wq12fec72q.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,x0850n5e.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,xbkbk53oqtu.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,xi6w9ab6iuc.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,xiionjylru.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,xjvlba0ek9.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,xs3qxlobv7.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,xsmqvcjwfa.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,xspei819vf6b.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,xylxsm64q.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,zc9qiivttp.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,zr0dsp7j0.1q9cz.adobestats.io,🛑 全球拦截
+  - DOMAIN,04jbrn2bg.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,0bcg6l1u8u.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,0ecbfzalpy.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,0ev7wnlkmrcx.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,0m5nxyr8zk80.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,0qqmlwes2w6m.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,0tgnrt93vxtw.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,12lm41e3os2.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,17916q8y2ix9.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,1bz59yq3rf5.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,1ed4p60jd5rf.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,1g8m2juc.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,1i7csb75di.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,1lcuuu4k.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,1nbme6sogt.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,1xtf8ytv0.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,1yzu94ms5s4.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,2cpy2b2r.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,2g5kmsgc97n.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,2gbqfsacfv1.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,2whtsc0q.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,3218ttmdd.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,32r7z7od.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,35722wmugb.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,3iqvq46tx.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,3rkmttv8mc6.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,3skc17nfi2f0.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,3t6ddbawasb.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,3vsyizvqu9.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,4cmsc5f8vs.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,4ejpbntikws.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,4ngha9hj.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,4t52kl2d.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,4y3nc0hs1na.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,513h1s2r9.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,574102lo.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,5892wibm3w2n.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,628qg2zu.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,6755ycsvhq.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,69gk0r0x9.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,6lz3zidf.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,6o0bl42nxo.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,70ei117w2tq3.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,7d3kxz8fjws1.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,7hs5w3j78.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,7wxvfq3h8g.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,7xie4ny9z3.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,7zo3oq7jm.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,8gpdpvtvz.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,8lptnd93b.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,8nbo4oyzythy.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,8niplw53n9nk.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,8wwpo3wdhn4a.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,97c83f9z7.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,97nud002.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,9ctyuepitl.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,9gtqhzgud.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,9hh6jkyd48hq.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,9iazo2tk.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,9jl57rijpoc.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,9x5m0bmrb.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,a6vifi5cxyz.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,ahjy1g7mlofh.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ahwmzagg51.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,ajfhnnlq0vy.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,c6d9jowi.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,cs86p81v.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ct5h571g.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,czqygjuzp.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,d0p1msb6o.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,d56918iue4.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,d8c5f3a8.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,deao31q0f9zy.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,dnhn294z.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,e19p7b9wla.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,efxssvohk.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ek5l6h9nl.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,emu27cyn.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,evxui0prg6.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ews5q20goc8t.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,exgebicxdi.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,f4nk7eu8.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,fdie74miwg0.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,fjhycng19x1s.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,flduxy80b71.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,fm3ot17pb.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,fpjoy1y5.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,fqzymlsgyu.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,fuxcgfvl.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,g82u0dsrinp.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ga0tdmb5.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,gd2hbzqj.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,gdnx3pvc9.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,gh2hce40xna.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,gocuqjhw5.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,grks53a2ke.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,grt4r398w.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,h79wuqyp.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,hiatxjcxnz.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,hixdftvfiks.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,hoe3zs9s.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,hyh3wqmbvkx7.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,i5nof1wakx4.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ij9368qt.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,ikm4lk8ce.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,ir89l1j6oncj.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,j0ep7ksh.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,j73xvt4wche.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,j7ot9m1p.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,jnpksfq2v.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,jxfigqhn.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,k1y92zy0.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,k3bedj0sy.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,kemtv8rfv.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ktb4zg94k.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,ktnpcrmc.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,kws40zt894.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,l9u86xu8.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,lgf0dmchhfy.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ljhtm6rll52.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,llzmjhqxwcez.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,mntn3jk1fbc.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,mso4kyh8p.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,mwpzkqca.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,n5ntqcb1fnhy.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,n7sffhmbik.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ncxd1ksu0mw.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,nt2re5ht201.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,or2nb098o.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,oy88lc566ocq.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ozib1sk0g.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,p423t4ylt6.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,pgeypa2qhpop.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,pid7w0q1.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,pmcql7ax3.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,pplxhkktz.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,q4rxsm2l3dav.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,qa38px2zn.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,qdzjck8bq6n0.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,r51zpwvc5jp.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ra2mwfqb4.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,rczyxl74ol.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,rhu4qivio.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,rwo7giomwcu3.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,rxmqcmv5m1xd.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ryt7eu0l.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,rz3ywocx.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,s2nequ0bfz.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,s9t3jv2t2.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,sc2bd0ohba0.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,sjdqoe28n.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,sjsdgy69.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,su2cj298j.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,szrkxgrcpv8.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,t2okh1dek8.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,tfm1m7x41e0e.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,tgdaxm8b3zs.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,toygn5lz2nm2.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,tqsy6r9v.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ty0k97gej.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,u14vnzioq.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,u6mkui74.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,vb2s5et7a8c.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,vkywmq1z.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,vn74da8yax.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,vpbnz99bda88.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,w5xs3v5vf.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,whdvwq4jui.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,wlbl2dn0kz.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,wobnxwwwv3.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,x1dbnkx48an.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,x83aq4izqus.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,xc8ydexq41.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,xe45k00h.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,xjut8y3ya8.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,xjxrod2hx5l.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,xple3239iko.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,xrxur3tu.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,xwlrml5hnvhg.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,y12671da.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,y6emdcgc.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,ydoc4r2xr8rm.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,ydovti6wnv.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,ytl7ot89kf.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,z7oewd5c.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,zca6ccjzwjeg.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,zdzwdhf0u.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,zg77hlj7jf.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,zicmus3efm3.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,zpzrwmjiyd.2coyv.adobestats.io,🛑 全球拦截
+  - DOMAIN,zsatvosvoh.2cmyg.adobestats.io,🛑 全球拦截
+  - DOMAIN,0ak50oozcg.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,0dix3t2wlu98.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,16tugv31j.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,1fnnckiomeu.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,1g8td7q0x.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,1iluujbob2.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,1l942k7lv.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,1tth7p4df.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,2ytocobjxgrp.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,388c1y6ob3.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,3cdfhm3cv38a.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,3ekkiraoand4.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,3o3zn3ijdj3.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,3t3urvw2o.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,47x0gjbq1.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,5f2f9rvh1t.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,5fvs4mfkg0y.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,5jzk0ojo.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,5k3gt8chmakf.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,62x9drsbjuq.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,6ihqquz0.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,6nmycugpyd.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,70wwf3175uhp.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,78j0qdj5qpn9.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,7nbn5vhsx.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,7z7eyq90tji.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,82jx6w2ae1.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,8v5wy6p6.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,91ptfx0o.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,997plr71aun.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,a9ff90ul.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,ael69y043bit.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,alvtuiuvk.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,ay75mx8il.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,bchzooecm.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,bx7xmjwkz5.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,ce6wxb7fhr8.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,ck1qw2151x3a.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,de9xlnplg78.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,dh75n0pzvauh.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,el8dknene3u.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,euzewmu45.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,gfqir0k0m1.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,hyebasuf94te.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,idvjaw6ymu.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,ih3w0y3i.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,ilgw3ea86.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,iunyim5y3ws.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,iz1tbuvjm.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,jihskqgq.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,jin0y4p43.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,joqrjdrty27.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,km5cp70k0.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,kqx3yi9bo.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,l7wjrd8iw.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,lgfdnw2g.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,lhhygnvt.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,lqjhmiu3m8lk.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,m6stllme73.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,m9fkxvxsv.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,mij28u0a967.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,mkoqsoik20l0.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,n4345pyn.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,n6vzpfzc.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,nhrg049rln1.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,o5j3q1phc.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,omd28oxz2.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,ouoh2s36.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,pagmjllg.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,plvteimk8.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,q986u283ngil.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,qoborejq.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,r35yaq0cft1i.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,rfkuy2bw6eyz.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,rkh51pxxxs.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,rlxsd9fyey.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,rsv7862qe22h.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,s78eo0h8.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,sutfxezr.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,svhg9c4vwk.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,tciednr8.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,tfajftrviq4.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,tqj9mur95q.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,tu32sl0vni.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,tu60pue2.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,u59sejol0.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,upr1b7426i.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,uubkrrllr3e.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,uwryfzjdrz.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,v22q6w6wq.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,we1umqiswu2z.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,wlj1h4blrp7g.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,wxyngd17t6.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,xgdmt4vf85bp.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,xszot6ji.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,yekgto6utnwb.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,z9qaad6rt4kg.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,zq2u2gyhgz.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,zsuhb3mn59k.3xjvl.adobestats.io,🛑 全球拦截
+  - DOMAIN,0pvuqbo0gp.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,13fzpjbnw.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,1cciffmy.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,25oqec9beut.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,2ubn0bgt.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,3bsw16o87.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,3zgnol62hymn.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,44gdu1gn.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,4ecfyif7d.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,6aienrf7y.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,78llgkj8v.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,7dcl58x4cg.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,8jpwlsfcaxw.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,8nmareaw12a.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,95n02g988.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,9o5dco2h1.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,9odub9g0.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,ajwbkumb.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,atev0mobfmd1.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,awqf9p40kj.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,awtpnart9d.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,b6t845z6.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,bnv0bt498q.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,bo96sk00c61.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,c2roztgq.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,dcc1xatvio.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,dgowhu7vyk.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,dlqryozt.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,ewdowuy23khp.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,flpsxdxjyax.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,g2cv87zfbf.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,g9vkt18fu.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,h8j4lec4hv.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,hpqtrig7e1.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,hqa776kuf.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,hrdou0gh.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,hs4jv9j7qy0.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,hv7lt863h4.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,jydgzq6k.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,kru0dz4wl.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,l6ndvaiullw.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,llv7vf2cynl.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,ly3219lgb7s.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,m4v4mqsmq.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,m8r680iz.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,mi67x05hg.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,mn67ozltur.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,mq21a5sca8.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,mvl7yoqlxkln.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,mz4fxtaz5wwv.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,n43ubec5a76.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,njustnedb.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,ol7rijgbf.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,ozj8cr7pat.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,p659jjcw8.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,prcjosn6.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,q6f3t5d5i.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,qrgrkibejb5.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,rb04r46yapz.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,rd1d00p09rya.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,rjon5sgzdul.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,rqvyeb3k8o.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,s9rawsbsp.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,sczkv6l2v1x.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,sgzicrdz0cg3.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,sheq7uv3p.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,sm0v3815cbn.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,sthu8k4wed8s.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,t6027o5jiq95.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,tie6yjtjf9hk.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,tlew31swf3r4.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,tos141brrxsb.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,u4z7usymt.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,uq4ib3zn62e.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,uynotc08srsr.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,v45iqgwp.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,v4m9cqthv.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,vacfc4xhj.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,vwc3u061.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,w1d9x5it5.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,wx8nfk83jd.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,x258iq8um.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,xzlycnbhix.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,yb1j27wqy1.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,yi3oidcc.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,yx7oclzlmg.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,z208b5yvc.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,z6g0tr1xgj3.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,zgnyr3zt8ud.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,ziuvj8gt6a.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,zmm9nnlixbq.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,zzlcqp2w.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,zzpdxvn3vusr.48fwz.adobestats.io,🛑 全球拦截
+  - DOMAIN,03xmvx33na.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,04d3hx2e5.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,0gjir2x7i.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,0mbdqxnv.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,16170cwgprqv.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,17ydlv9pgi.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,20xbfn94j3.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,2ckkj7ufdt5.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,2i21el29f7a.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,2ldb69wef.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,2p8qhzb8vu0g.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,32ic97smef.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,3j9cuq7gsfo6.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,3w6clf8j.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,4kmn9y5hayrn.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,4tcoyzs33.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,551bj9qztfq6.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,5cgztabi.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,5m6q7iyt6ica.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,73dfrawhz4.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,76cf9vfq28a.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,7eyuwikq.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,7lugyfvg.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,7o29vpyvow.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,7uo8fch6c2bj.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,7vgtvfh1lxma.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,83cz2gsx1hg.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,9dgbak8s.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,9dssb8q77.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,a92d2ioj87.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,aekweh4z.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,b149bc96li.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,c6osgcdaqm6.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,csu1k7u8qkoa.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,da5wgo9i3kja.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,dj21pp90qiz.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,ds4ylzqyz1.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,eztk3dd9wq1v.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,flo32talygc.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,fmweqej4r.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,g5nxt1t4.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,gdas54a9a9t.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,gfv4tdsa6rs0.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,gv9k3g8fuvul.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,gy86kj6q6f.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,h10ol2xjtq.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,h7cjf4246.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,h9qos2kew.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,hj84oredb.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,hs4ebcvo750q.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,i0ta4z6m0.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,j0o3msds3bz.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,jdm9mna1r4a3.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,jhlfp19i0m.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,js8h08kw0ckr.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,ldfphohq.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,m1opd5zvb.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,m6643uerp6n.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,ms9ar2ou4.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,nau81npbr.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,ntxk2eqr.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,oxgcabsl0n.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,q5kxbhcww.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,qo0fmb5t4o4j.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,qp0rnazbm5k.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,qr6cvszxho.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,qttrz9kon.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,rjxbf3xkk.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,rwxbrkcibs.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,s16szuqbt8.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,t3mjfpm0pu7l.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,t54wk3yyv8k.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,toquyfxi.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,u342jz5s3h.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,ugwskmdrki.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,uvjmuz6o.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,v1thjyh00yts.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,v406do5q.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,v9vysb6x4lxf.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,vd6pquh7m.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,vdm6whojd.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,veeanzryhj.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,vzumanqzm282.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,w25wvkkba5.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,wda5decbe4.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,wkh8b1oxb.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,x6qui5rznx9t.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,x8wzx359hd2v.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,yfzc5bfso9.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,yg764x25r.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,yhd0ulso1k2.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,ymax7z224wf.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,zm9vka6gfi2.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,fekuerjze5.4cbdo.adobestats.io,🛑 全球拦截
+  - DOMAIN,fire-fly.adobe.io,🛑 全球拦截
+  - DOMAIN,6u13v.adobestats.io,🛑 全球拦截
+  - DOMAIN,0iyjdjohepq.6u13v.adobestats.io,🛑 全球拦截
+  - DOMAIN,29kpwdbf1m.6u13v.adobestats.io,🛑 全球拦截
+  - DOMAIN,8zoh1hwp.6u13v.adobestats.io,🛑 全球拦截
+  - DOMAIN,f0amtxkpj6.6u13v.adobestats.io,🛑 全球拦截
+  - DOMAIN,k1ojvlkr7ob0.6u13v.adobestats.io,🛑 全球拦截
+  - DOMAIN,pirn9t2nbqxs.6u13v.adobestats.io,🛑 全球拦截
+  - DOMAIN,qrkm8lznul.6u13v.adobestats.io,🛑 全球拦截
+  - DOMAIN,ynb4dnmkb3.6u13v.adobestats.io,🛑 全球拦截
+  - DOMAIN,90ss7qvydj6.4p4bv.adobestats.io,🛑 全球拦截
+  - DOMAIN,mdvuqnnr3dsl.4p4bv.adobestats.io,🛑 全球拦截
+  - DOMAIN,vonunaxc.61ro5.adobestats.io,🛑 全球拦截
+  - DOMAIN,9d6v9viz79.u0op6.adobestats.io,🛑 全球拦截
+  - DOMAIN,ljlijiscgm.u0op6.adobestats.io,🛑 全球拦截
   - DOMAIN-SUFFIX,265.com,🚀 节点选择
   - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🚀 节点选择
@@ -8384,15 +9294,10 @@ rules:
   - IP-CIDR,5.226.179.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,5.226.181.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,14.102.228.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,23.141.168.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,23.145.136.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,23.145.152.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,23.145.232.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,23.145.248.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,23.167.152.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,23.178.112.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,23.179.248.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,23.180.136.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,23.247.163.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,25.25.25.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,25.26.27.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8401,7 +9306,6 @@ rules:
   - IP-CIDR,31.12.75.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,31.43.179.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,44.31.142.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,45.8.211.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.12.30.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.80.108.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.80.110.0/23,☁️ CloudFlareCDN,no-resolve
@@ -8414,7 +9318,6 @@ rules:
   - IP-CIDR,45.142.120.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.149.12.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.194.53.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,45.202.113.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.205.0.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,46.202.30.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,62.72.166.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8436,7 +9339,6 @@ rules:
   - IP-CIDR,77.37.33.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,77.74.228.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,77.75.199.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,77.105.163.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,77.232.140.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,80.93.202.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,83.118.224.0/22,☁️ CloudFlareCDN,no-resolve
@@ -8449,9 +9351,6 @@ rules:
   - IP-CIDR,89.116.250.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,89.117.112.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,89.207.18.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,91.124.127.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,91.192.106.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,91.193.58.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,91.199.81.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,91.209.253.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,92.53.188.0/22,☁️ CloudFlareCDN,no-resolve
@@ -8460,18 +9359,15 @@ rules:
   - IP-CIDR,93.115.102.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,94.140.0.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,94.247.142.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,102.177.176.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,102.177.189.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.11.212.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.11.214.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.15.85.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.19.144.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,103.79.228.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.112.176.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.116.7.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.121.59.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.133.1.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,103.135.208.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.169.142.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.172.110.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.204.13.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8486,7 +9382,6 @@ rules:
   - IP-CIDR,130.108.73.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,130.108.104.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,130.108.121.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,130.108.253.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,136.143.138.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,138.5.248.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,139.64.234.0/23,☁️ CloudFlareCDN,no-resolve
@@ -8507,19 +9402,12 @@ rules:
   - IP-CIDR,154.194.12.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.197.64.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.197.75.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,154.197.80.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,154.197.88.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,154.197.108.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,154.197.121.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.198.173.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.202.89.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.206.12.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.211.8.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,154.218.15.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,154.219.5.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,155.46.167.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,155.46.213.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,156.225.72.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.243.246.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.252.2.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,159.112.235.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8543,7 +9431,6 @@ rules:
   - IP-CIDR,170.176.152.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.83.72.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.83.76.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,176.124.223.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,176.126.206.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,178.211.142.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,178.213.76.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8555,8 +9442,6 @@ rules:
   - IP-CIDR,185.148.104.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.159.247.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.162.228.0/22,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,185.170.166.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,185.176.24.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.176.26.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.193.28.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.207.92.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8577,15 +9462,11 @@ rules:
   - IP-CIDR,193.67.144.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,193.162.35.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,193.227.99.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,193.233.21.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,193.233.132.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.1.194.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.26.68.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.36.49.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.36.55.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.39.112.0/21,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,194.53.53.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,194.59.5.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.113.223.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.152.44.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.169.194.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8626,9 +9507,7 @@ rules:
   - IP-CIDR,203.34.80.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,203.55.107.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,203.89.5.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,203.168.128.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,204.62.141.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,204.68.111.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,205.233.181.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,207.189.149.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,208.42.188.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8638,8 +9517,6 @@ rules:
   - IP-CIDR,209.46.30.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,209.222.114.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,212.239.86.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,213.182.199.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,213.219.247.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,213.241.198.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,216.120.131.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,216.120.180.0/23,☁️ CloudFlareCDN,no-resolve
@@ -8651,53 +9528,162 @@ rules:
   - IP-CIDR,1.0.0.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,1.1.1.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,5.10.214.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,5.83.149.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,5.172.33.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,5.226.183.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,5.252.81.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.6.112.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.20.125.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.21.10.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.21.111.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.6.144.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.6.146.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.9.231.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.10.148.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.14.201.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.14.202.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.14.204.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.17.205.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.17.206.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.18.50.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.18.113.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.18.194.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.18.196.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.19.8.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.20.100.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.20.103.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.20.122.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.20.124.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.20.253.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.21.8.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.21.13.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.21.110.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.21.238.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.23.139.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.23.240.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.24.87.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.24.242.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.24.244.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.25.96.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.25.249.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.26.182.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.27.64.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.27.66.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.27.68.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.27.70.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.27.79.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.28.20.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.28.82.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.28.126.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.28.213.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.29.105.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.29.109.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.29.228.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.29.230.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.30.234.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.31.2.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.31.160.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.34.70.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.31.163.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.34.69.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.34.70.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.34.146.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.34.200.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.34.202.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.35.57.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.35.58.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.35.149.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.35.211.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.35.216.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.36.216.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.36.220.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.37.41.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.37.43.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.38.147.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.38.148.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.39.6.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.39.18.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.39.125.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.39.204.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.39.214.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.39.126.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.39.201.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.39.202.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.39.204.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.39.206.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.39.212.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.40.26.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.40.28.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.40.107.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.40.111.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.40.140.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.41.5.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.41.6.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.41.36.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.41.39.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.41.129.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.42.51.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.42.52.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.42.54.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.42.161.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.42.164.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.42.172.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.42.245.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.43.121.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.43.122.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.43.224.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.43.226.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.44.6.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.44.58.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.44.61.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,8.47.13.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.44.62.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.45.41.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.45.42.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.45.97.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.45.100.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.45.102.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.45.108.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.45.111.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.45.144.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.45.151.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.46.113.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.46.114.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.46.116.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.47.9.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.47.12.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,8.47.69.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.47.71.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.48.130.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.48.132.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,8.48.134.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,16.5.144.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,23.131.204.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,23.145.136.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,23.145.152.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,23.145.248.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,23.180.136.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,23.227.37.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,23.227.38.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,23.227.42.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,23.227.48.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,23.227.60.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,31.185.108.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,37.72.109.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,37.153.170.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,38.96.28.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,42.61.47.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,43.228.232.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,43.230.112.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,43.230.114.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,43.229.39.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,43.230.144.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.12.44.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,45.43.147.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,45.43.158.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.45.255.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.128.76.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,45.130.106.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.130.125.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,45.134.227.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.146.130.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.148.100.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.157.17.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.192.223.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.192.224.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,45.195.14.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.195.153.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.196.29.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,45.196.168.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.198.114.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.198.116.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,45.198.139.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8708,48 +9694,74 @@ rules:
   - IP-CIDR,51.194.144.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,51.241.128.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,57.250.49.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,57.250.50.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,61.8.33.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,61.32.240.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,61.245.108.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,62.105.219.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,62.146.255.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,64.8.255.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,64.40.138.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,64.40.140.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,64.239.31.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,65.110.63.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,66.71.220.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,66.80.5.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,66.84.82.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,66.92.62.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,66.93.178.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,66.203.249.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,66.235.200.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,66.242.60.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,68.182.187.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,69.87.126.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,69.90.210.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,72.11.158.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,72.22.87.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,74.1.17.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,77.73.113.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,77.90.139.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,77.90.173.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,77.90.190.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,78.128.122.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,80.68.216.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,80.240.93.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,82.21.82.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,82.21.188.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,82.22.16.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,82.22.21.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,82.22.49.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,82.25.20.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,82.26.156.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,82.109.153.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,82.39.253.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,82.47.124.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,82.139.216.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,87.86.16.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,82.152.216.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,83.245.13.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,83.245.66.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,84.232.93.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,85.133.194.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,87.84.129.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,87.85.66.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,87.85.71.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,87.85.131.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,87.85.174.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,87.232.75.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,87.232.80.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,88.216.69.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,89.32.173.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,89.46.251.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,89.106.90.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,89.249.200.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,89.167.240.0/21,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,90.96.176.0/20,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,91.192.106.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,91.206.71.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,91.213.221.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,91.224.186.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,91.234.202.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,92.44.1.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,93.118.176.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,94.118.42.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,94.156.10.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,94.177.26.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,94.194.72.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,96.43.100.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,98.98.234.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.21.244.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8757,10 +9769,17 @@ rules:
   - IP-CIDR,103.22.203.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.31.4.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.31.79.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,103.41.125.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,103.41.185.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,103.49.212.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.50.96.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.51.12.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.54.128.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,103.79.228.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.81.228.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,103.98.194.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,103.130.111.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,103.135.208.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.186.74.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.198.92.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.215.22.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8801,28 +9820,41 @@ rules:
   - IP-CIDR,104.22.112.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.120.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.123.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.126.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.124.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.128.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.131.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.132.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.134.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.136.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.140.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.155.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.156.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.148.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.150.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.152.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.160.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.162.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.165.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.167.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.168.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.170.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.168.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.172.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.174.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.176.0/22,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.180.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.186.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.176.0/21,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.184.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.190.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.22.192.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.192.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.196.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.198.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.202.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.204.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.210.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.216.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.219.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.220.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.222.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.224.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.226.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.232.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.236.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.22.238.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.23.160.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.23.176.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.23.178.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8835,7 +9867,11 @@ rules:
   - IP-CIDR,104.23.204.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.23.206.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.23.208.0/20,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.23.224.0/19,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.23.224.0/20,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.23.240.0/21,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.23.248.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.23.250.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.23.252.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.24.0.0/18,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.24.64.0/19,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.24.128.0/17,☁️ CloudFlareCDN,no-resolve
@@ -8844,15 +9880,10 @@ rules:
   - IP-CIDR,104.27.0.0/17,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.27.192.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.28.0.0/16,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.29.9.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.29.45.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.29.77.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.29.92.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.29.111.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.29.114.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,104.29.121.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.29.124.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.29.128.0/18,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.29.192.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.30.0.0/19,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.30.32.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.30.128.0/23,☁️ CloudFlareCDN,no-resolve
@@ -8864,9 +9895,15 @@ rules:
   - IP-CIDR,104.31.16.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.31.20.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.156.176.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.233.58.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.234.133.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.239.8.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.239.29.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.239.58.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.239.89.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.243.192.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.244.236.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,104.249.11.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.249.18.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.249.43.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,108.162.192.0/20,☁️ CloudFlareCDN,no-resolve
@@ -8882,10 +9919,14 @@ rules:
   - IP-CIDR,108.162.248.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,108.162.250.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,109.234.211.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,114.141.24.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,122.152.164.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,123.108.75.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,123.253.173.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,123.253.174.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,129.192.2.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,131.0.72.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,131.162.148.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,131.167.255.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,137.66.96.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,138.226.212.0/23,☁️ CloudFlareCDN,no-resolve
@@ -8893,6 +9934,7 @@ rules:
   - IP-CIDR,138.249.21.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,138.249.126.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,138.249.148.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,140.233.163.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,140.233.180.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,141.101.65.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,141.101.66.0/23,☁️ CloudFlareCDN,no-resolve
@@ -8910,14 +9952,19 @@ rules:
   - IP-CIDR,141.101.109.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,141.101.110.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,141.101.112.0/20,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,142.228.46.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,143.14.142.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,143.14.224.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,143.14.251.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,144.56.84.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,144.124.208.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,144.124.211.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,144.124.212.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,144.124.214.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,144.124.223.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,144.208.122.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,144.225.66.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,144.225.90.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,145.63.64.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,145.224.255.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,146.19.108.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8931,10 +9978,12 @@ rules:
   - IP-CIDR,151.246.216.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,152.114.0.0/17,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,152.114.128.0/18,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,153.51.214.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,153.51.216.0/21,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,153.79.172.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,153.79.174.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.46.20.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.81.141.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,154.84.164.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,154.86.118.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.193.63.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.193.133.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,154.193.184.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8945,6 +9994,7 @@ rules:
   - IP-CIDR,156.70.60.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.71.149.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.224.73.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,156.234.250.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.238.181.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.243.83.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,156.246.69.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8955,6 +10005,7 @@ rules:
   - IP-CIDR,161.115.162.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,161.248.134.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.44.104.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,162.141.1.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.0.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.8.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.10.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8962,14 +10013,16 @@ rules:
   - IP-CIDR,162.158.16.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.24.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.26.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,162.158.28.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,162.158.29.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.30.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.32.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.35.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.36.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.40.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.44.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,162.158.48.0/21,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,162.158.48.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,162.158.50.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,162.158.52.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.61.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.62.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.73.0/24,☁️ CloudFlareCDN,no-resolve
@@ -8977,7 +10030,6 @@ rules:
   - IP-CIDR,162.158.76.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.84.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.88.0/21,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,162.158.97.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.99.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.100.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.104.0/21,☁️ CloudFlareCDN,no-resolve
@@ -8992,7 +10044,6 @@ rules:
   - IP-CIDR,162.158.144.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.146.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.148.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,162.158.150.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.152.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.160.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.158.176.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9015,6 +10066,7 @@ rules:
   - IP-CIDR,162.159.0.0/18,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.159.64.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.159.81.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,162.159.84.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.159.88.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.159.96.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.159.100.0/23,☁️ CloudFlareCDN,no-resolve
@@ -9043,7 +10095,9 @@ rules:
   - IP-CIDR,162.159.240.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.251.82.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,162.251.205.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,163.245.49.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,165.101.60.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,166.0.10.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,166.88.240.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,167.1.137.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,167.74.92.0/22,☁️ CloudFlareCDN,no-resolve
@@ -9051,6 +10105,7 @@ rules:
   - IP-CIDR,167.74.142.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,168.151.31.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,168.183.3.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,169.40.38.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,169.40.40.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,169.40.133.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,170.168.7.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9093,8 +10148,7 @@ rules:
   - IP-CIDR,172.66.216.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.67.64.0/18,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.67.128.0/17,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.68.0.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.68.2.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.68.0.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.4.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.6.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.8.0/23,☁️ CloudFlareCDN,no-resolve
@@ -9124,7 +10178,6 @@ rules:
   - IP-CIDR,172.68.96.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.99.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.100.0/22,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.68.105.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.107.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.108.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.113.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9147,13 +10200,16 @@ rules:
   - IP-CIDR,172.68.164.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.168.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.172.0/22,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.68.176.0/21,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.68.177.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.68.178.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.68.180.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.184.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.188.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.192.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.196.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.198.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.68.204.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.68.204.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.68.206.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.208.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.217.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.68.219.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9179,7 +10235,8 @@ rules:
   - IP-CIDR,172.69.19.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.21.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.22.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.69.32.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.32.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.34.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.38.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.40.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.42.0/23,☁️ CloudFlareCDN,no-resolve
@@ -9193,16 +10250,18 @@ rules:
   - IP-CIDR,172.69.72.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.74.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.79.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.80.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.82.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.86.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.88.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.90.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.93.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.94.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.69.96.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.96.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.99.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.101.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.102.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.69.104.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.104.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.108.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.112.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.114.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9219,6 +10278,7 @@ rules:
   - IP-CIDR,172.69.147.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.148.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.152.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.154.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.156.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.158.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.162.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9243,16 +10303,15 @@ rules:
   - IP-CIDR,172.69.219.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.220.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.224.0/22,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.69.228.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.229.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.233.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.69.234.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.235.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.236.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.69.238.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.239.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.241.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.245.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.246.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.69.248.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.69.251.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.69.248.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.253.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.69.255.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.70.32.0/20,☁️ CloudFlareCDN,no-resolve
@@ -9273,7 +10332,6 @@ rules:
   - IP-CIDR,172.70.128.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.70.144.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.70.149.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.70.152.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.70.154.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.70.156.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.70.159.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9305,7 +10363,7 @@ rules:
   - IP-CIDR,172.71.3.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.71.4.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.71.8.0/22,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,172.71.14.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,172.71.15.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.71.16.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.71.20.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.71.24.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9357,9 +10415,15 @@ rules:
   - IP-CIDR,173.245.60.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,173.245.63.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,176.103.113.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,177.28.6.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,177.104.130.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,177.104.132.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,177.104.140.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,178.83.176.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,178.93.117.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,178.94.178.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,178.94.249.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,178.239.123.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,180.255.25.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,181.215.196.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,182.23.210.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.7.240.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9368,6 +10432,7 @@ rules:
   - IP-CIDR,185.38.25.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.41.148.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.60.251.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,185.106.205.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.132.85.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.132.86.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.133.172.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9376,8 +10441,15 @@ rules:
   - IP-CIDR,185.149.135.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.156.19.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.158.133.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,185.171.229.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,185.176.159.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.178.196.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,185.189.26.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,185.198.24.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,185.220.20.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.229.206.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,185.245.253.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,187.32.204.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,188.42.98.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,188.95.12.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,188.114.96.0/22,☁️ CloudFlareCDN,no-resolve
@@ -9391,6 +10463,10 @@ rules:
   - IP-CIDR,192.71.82.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,192.86.150.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,192.103.56.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,192.120.41.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,192.250.58.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,193.8.27.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,193.8.28.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,193.8.231.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,193.8.237.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,193.118.171.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9407,10 +10483,14 @@ rules:
   - IP-CIDR,194.34.84.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.34.88.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.34.93.0/24,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,194.41.114.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,194.77.211.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,194.77.212.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.77.235.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,194.152.130.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,195.21.128.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,195.21.148.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,195.66.29.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,195.85.194.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,195.216.190.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,195.242.122.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,197.234.240.0/22,☁️ CloudFlareCDN,no-resolve
@@ -9420,10 +10500,10 @@ rules:
   - IP-CIDR,198.41.192.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.41.208.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.41.211.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,198.41.213.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.41.214.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.41.216.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.41.222.0/23,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,198.41.224.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.41.226.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.41.228.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.41.232.0/23,☁️ CloudFlareCDN,no-resolve
@@ -9433,6 +10513,7 @@ rules:
   - IP-CIDR,198.41.242.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.52.36.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.148.174.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,198.200.167.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.217.251.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.252.206.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,199.7.70.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9440,13 +10521,17 @@ rules:
   - IP-CIDR,199.65.62.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,199.68.16.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,200.69.28.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,200.218.32.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,202.27.69.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,202.49.114.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,203.5.33.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,203.15.65.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,203.116.108.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,203.117.8.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,203.117.53.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,203.120.52.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,203.168.128.0/22,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,203.168.192.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,204.4.235.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,204.62.121.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,204.62.122.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9454,6 +10539,10 @@ rules:
   - IP-CIDR,204.153.16.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,204.195.192.0/18,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,205.203.78.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,206.15.50.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,206.15.53.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,206.15.54.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,206.15.56.0/21,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,206.206.104.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,207.57.150.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,207.89.22.0/23,☁️ CloudFlareCDN,no-resolve
@@ -9474,16 +10563,26 @@ rules:
   - IP-CIDR,211.188.26.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,212.6.39.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,212.104.128.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,212.114.54.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,212.189.70.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,212.189.86.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,212.189.92.0/23,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,213.209.139.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,213.209.141.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,213.209.143.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,213.209.147.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,216.19.107.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,216.74.106.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,216.97.235.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,216.132.75.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,216.163.179.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,216.183.79.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,216.224.121.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,217.8.196.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,217.25.13.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,217.180.16.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,218.33.92.0/22,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,222.167.32.0/22,☁️ CloudFlareCDN,no-resolve
-  - IP-CIDR,222.167.230.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,103.21.246.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.22.240.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,104.23.0.0/19,☁️ CloudFlareCDN,no-resolve
@@ -9503,6 +10602,7 @@ rules:
   - IP-CIDR,104.23.64.0/19,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,141.101.64.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,141.101.91.0/24,☁️ CloudFlareCDN,no-resolve
+  - IP-CIDR,162.159.83.0/24,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.71.32.0/19,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,172.71.64.0/20,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,198.41.143.0/24,☁️ CloudFlareCDN,no-resolve
@@ -9511,4 +10611,4 @@ rules:
   - IP-CIDR,198.41.252.0/23,☁️ CloudFlareCDN,no-resolve
   - IP-CIDR,185.122.0.0/24,☁️ CloudFlareCDN,no-resolve
   - GEOIP,CN,🎯 全球直连
-  - MATCH,Nova-WARP
+  - MATCH,🐟 漏网之鱼
