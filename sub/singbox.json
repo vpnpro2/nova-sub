@@ -81,465 +81,6 @@
       "tag": "DIRECT"
     },
     {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]",
-      "server": "eng.clickeyourip1.cloudns.nz",
-      "server_port": 443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]",
-      "server": "104.17.66.138",
-      "server_port": 443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]",
-      "server": "190.93.244.130",
-      "server_port": 443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]",
-      "server": "104.27.96.197",
-      "server_port": 2053,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]",
-      "server": "8.6.112.165",
-      "server_port": 443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]",
-      "server": "Chatgpt.com",
-      "server_port": 443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova Grok.com:443 [VLESS]",
-      "server": "Grok.com",
-      "server_port": 443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]",
-      "server": "npmjs.com",
-      "server_port": 443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova openai.com:443 [VLESS]",
-      "server": "openai.com",
-      "server_port": 443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova chess.com:443 [VLESS]",
-      "server": "chess.com",
-      "server_port": 443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]",
-      "server": "104.16.170.48",
-      "server_port": 8443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]",
-      "server": "162.159.49.217",
-      "server_port": 8443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]",
-      "server": "104.21.204.154",
-      "server_port": 8443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]",
-      "server": "104.25.139.186",
-      "server_port": 8443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]",
-      "server": "104.18.236.41",
-      "server_port": 8443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]",
-      "server": "104.19.182.152",
-      "server_port": 8443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]",
-      "server": "172.64.98.61",
-      "server_port": 8443,
-      "uuid": "a51dc67d-4e71-4572-84e2-3b8dbd725b7a",
-      "transport": {
-        "path": "/proxyip=149.248.199.173",
-        "type": "ws",
-        "headers": {
-          "Host": "eng.clickeyourip1.cloudns.nz"
-        }
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "eng.clickeyourip1.cloudns.nz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "ech": {
-          "enabled": true,
-          "query_server_name": "cloudflare-ech.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "🚀 节点选择",
       "outbounds": [
@@ -547,23 +88,6 @@
         "🔯 故障转移",
         "🔮 负载均衡",
         "DIRECT",
-        "سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Grok.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova openai.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova chess.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]",
         "📢 https://t.me/irnova"
       ]
     },
@@ -571,23 +95,7 @@
       "type": "urltest",
       "tag": "♻️ 自动选择",
       "outbounds": [
-        "سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Grok.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova openai.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova chess.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]"
+        "DIRECT"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -597,46 +105,14 @@
       "type": "urltest",
       "tag": "🔯 故障转移",
       "outbounds": [
-        "سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Grok.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova openai.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova chess.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]"
+        "DIRECT"
       ]
     },
     {
       "type": "urltest",
       "tag": "🔮 负载均衡",
       "outbounds": [
-        "سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Grok.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova openai.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova chess.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]"
+        "DIRECT"
       ]
     },
     {
@@ -667,23 +143,6 @@
         "♻️ 自动选择",
         "🔯 故障转移",
         "🔮 负载均衡",
-        "سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Grok.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova openai.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova chess.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]",
         "📢 https://t.me/irnova"
       ]
     },
@@ -697,23 +156,6 @@
         "♻️ 自动选择",
         "🔯 故障转移",
         "🔮 负载均衡",
-        "سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Grok.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova openai.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova chess.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]",
         "📢 https://t.me/irnova"
       ]
     },
@@ -722,23 +164,6 @@
       "tag": "GLOBAL",
       "outbounds": [
         "DIRECT",
-        "سرویس رایگان نوا @irnova eng.clickeyourip1.cloudns.nz:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.17.66.138:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 190.93.244.130:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.27.96.197:2053 [VLESS]",
-        "سرویس رایگان نوا @irnova 8.6.112.165:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Chatgpt.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova Grok.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova npmjs.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova openai.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova chess.com:443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.16.170.48:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 162.159.49.217:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.21.204.154:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.25.139.186:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.18.236.41:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 104.19.182.152:8443 [VLESS]",
-        "سرویس رایگان نوا @irnova 172.64.98.61:8443 [VLESS]",
         "📢 https://t.me/irnova"
       ]
     },
@@ -779,6 +204,12 @@
         "outbound": "block",
         "rule_set": [
           "geosite-category-malware"
+        ]
+      },
+      {
+        "outbound": "direct",
+        "rule_set": [
+          "geosite-category-sanctioned-ir"
         ]
       },
       {
@@ -11321,6 +10752,12 @@
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs"
+      },
+      {
+        "type": "remote",
+        "tag": "geosite-category-sanctioned-ir",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-sanctioned-ir.srs"
       },
       {
         "type": "remote",
